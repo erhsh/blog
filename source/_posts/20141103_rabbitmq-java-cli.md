@@ -67,7 +67,10 @@ description: 曾经以为理解了RabbitMq，今天应对新需求，发现理�
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();
 
-		channel.queueDeclare("MsgTopic", false, false, false, null);
+		// 声明消息队列
+		channel.queueDeclare("MsgTopic1", false, false, false, null);
+
+		// 发布消息
 		channel.basicPublish("MsgTopic", "8", null, "Hello World!".getBytes());
 		System.out.println(" [x] Sent '" + message + "'");
 
@@ -85,30 +88,27 @@ description: 曾经以为理解了RabbitMq，今天应对新需求，发现理�
 		<recevieQueue>
 			<exchangeName>MsgTopic</exchangeName>
 			<queueName>alarmQueue</queueName>
-			<msgParser>com.blackcrystalinfo.push.parser.impl.AlarmMsgParser
-			</msgParser>
+			<msgParser>com.erhsh.push.parser.impl.AlarmMsgParser</msgParser>
 			<routeKey>8</routeKey>
 		</recevieQueue>
 		<recevieQueue>
 			<exchangeName>MsgTopic</exchangeName>
 			<queueName>upgradeQueue</queueName>
-			<msgParser>com.blackcrystalinfo.push.parser.impl.UpgradeMsgParser
-			</msgParser>
+			<msgParser>com.erhsh.push.parser.impl.UpgradeMsgParser</msgParser>
 			<routeKey>9</routeKey>
 			<routeKey>10</routeKey>
 		</recevieQueue>
 		<recevieQueue>
 			<exchangeName>MsgTopic</exchangeName>
 			<queueName>allQueue</queueName>
-			<msgParser>com.blackcrystalinfo.push.parser.impl.UpgradeMsgParser
-			</msgParser>
+			<msgParser>com.erhsh.push.parser.impl.UpgradeMsgParser</msgParser>
 			<routeKey>#</routeKey>
 		</recevieQueue>
 	</rmqReceiveCfg>
 
 对应的配置类：
 
-	package com.blackcrystalinfo.push.test;
+	package com.erhsh.push.test;
 	
 	import java.io.InputStream;
 	import java.util.List;
