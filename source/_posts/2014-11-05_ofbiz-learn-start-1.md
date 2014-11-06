@@ -16,16 +16,25 @@ OFBiz最主要的特点是OFBiz提供了一整套的开发基于Java的web应用
 OFBiz 已经正式成为 Apache 的顶级项目。
 
 ## 不错的资料 ##
-http://my.oschina.net/u/257088/blog/339227
-http://ofbizer.iteye.com/category/222200
-http://blog.sina.com.cn/s/blog_a2ca5d8c01017fa0.html
-http://jiasudu.iteye.com/
-http://shuany.iteye.com/blog/1463282
+
+[OFBiz进阶--OFBiz总览之 框架介绍+版本信息+在线文档+中国业界](http://my.oschina.net/u/257088/blog/339227)
+
+[自由 Coding-Ofbiz](http://ofbizer.iteye.com/category/222200)
+
+[ofbiz数据库表结构设计](http://blog.sina.com.cn/s/blog_a2ca5d8c01017fa0.html)
+
+[jiasudu](http://jiasudu.iteye.com/)
+
+[ofbiz中用户角色数据结构的分析](http://shuany.iteye.com/blog/1463282)
+
 
 ## 成功的案例 ##
-http://www.100hg.com/
-http://www.gorun8.cn/dyn/main
-http://www.meitaojia.com/
+
+[百货购](http://www.100hg.com/)
+
+[gorun8](http://www.gorun8.cn/dyn/main)
+
+[美陶家](http://www.meitaojia.com/)
 
 
 ## 总结 ##
