@@ -1,10 +1,11 @@
 title: Ofbiz 初期调研
-comments: true
-mathjax: true
 date: 2014-11-05 18:45:56
 categories: Ofbiz学习
 tags: ofbiz 待完善
+description: 从业务角度调研实现的可能性。
+
 ---
+
 # Ofbiz #
 
 OFBiz是一个非常著名的电子商务平台，是一个非常著名的开源项目，

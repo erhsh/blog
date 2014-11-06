@@ -6,9 +6,9 @@ description: 曾经以为理解了RabbitMq，今天应对新需求，发现理�
 
 ---
 
-## RabbitMq之java实战 ##
+# RabbitMq之java实战 #
 
-### 消费者 ###
+## 消费者 ##
 	public static void main(String[] args) throws Exception {
 		// 建立连接，得到channel：
 		ConnectionFactory factory = new ConnectionFactory();
@@ -55,7 +55,7 @@ description: 曾经以为理解了RabbitMq，今天应对新需求，发现理�
 		}
 	}
 
-### 生产者 ###
+## 生产者 ##
 
 	public static void main(String[] args) throws Exception {
 		ConnectionFactory factory = new ConnectionFactory();
@@ -79,7 +79,7 @@ description: 曾经以为理解了RabbitMq，今天应对新需求，发现理�
 	}
 
 
-### 可配置的消费者 ###
+## 可配置的消费者 ##
 
 配置文件：
 

@@ -1,20 +1,19 @@
----
 title: 花样。
 date: 2014-11-02 22:55:16 
 category: 教程技术
 tags: 涨技能
 description: 测试一下markdown写作技巧。
+
 ---
 
+# 技巧收集 #
 
-## 技巧收集 ##
-
-### 插入图片 ###
+## 插入图片 ##
 
 ![head img](http://blog.erhsh.com/img/author.jpg)
 
 
-### 插入代码块 ###
+## 插入代码块 ##
 
 ``` bash
 var myLife = new Life();
@@ -39,10 +38,10 @@ Here is HTML code:
 	<div>
 
 
-### 超链接 ###
+## 超链接 ##
 
 访问我的[主页](http://www.erhsh.com "My Site")
 
-### 当前时间 ###
+## 当前时间 ##
 
 11/2/2014 11:21:16 PM 
