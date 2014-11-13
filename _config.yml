@@ -86,4 +86,4 @@ exclude_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
-  repo: git@github.com:erhsh/erhsh.github.io.git
+  repo: https://github.com/erhsh/erhsh.github.io.git
