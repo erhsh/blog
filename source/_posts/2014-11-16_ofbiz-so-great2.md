@@ -5,17 +5,17 @@ OFBiz 已经正式成为 Apache 的顶级项目: Apache OFBiz。
 
 ## Ofbiz愿景及架构##
 
-- 5个E
+- 5个‘E’
 	1. Ease of Cost: 减轻成本
 	2. Ease of Installation: 易于安装
 	3. Ease of Customization: 方便自定义
 	4. Ease of Integration: 易于集成
 	5. Ease of Use: 容易使用
 
-- 3大设计目标
+- 3个设计目标
 	1. 使用自然语言或XML文档来定义业务逻辑、规则及数据模型。
-	2. 最少的代码完成一个功能。
-	3. 最大化的重用现有组件
+	2. 用最少的代码来实现一个功能。
+	3. 最大化地重用现有组件。
 
 
 ### Ofbiz架构图 ###
@@ -46,6 +46,16 @@ OFBiz的核心技术在于实体引擎Entity Engine。OFBiz实体引擎提供了
 
 ![](img14-entity-engine.gif)
 
+- 提供简单的模型来使用关系数据库。
+- 不用编写或维护数据实体的持久化代码。
+- 实体定义在简单的XML文件中。
+- 实体可以通过API来创建、存储、删除、查找、排序、缓存等。
+- 支持基于JDBC驱动的任意数据库。
+- 可以通过配置代理来使用多个数据源。
+- 自动检查实体定义，并将差别同步到数据库中
+- 在有些情况下，使用实体引擎可能不合适，你可以使用JDBC、SQLJ来绕过实体引擎。
+
+
 Provides simple modeling and use of relational business data
 
 No entity specific persistence code must be written or maintained
@@ -69,6 +79,16 @@ Entity Engine can be easily bypassed with JDBC, SQLJ, etc. in the situations whe
 ### 服务引擎 ###
 
 ![](img12-service-engine.gif)
+
+- 多服务类型：Java，BeanShell，WorkFlow，Rules，SOAP
+- 目标的触发是通过定义XML配置文件，而不是代码。
+- 方法参数和返回值定义在XML里
+- 服务可以通过Web来获取（SOAP Server）
+- 服务可以使Web服务（SOAP Client）
+- 服务可以同步调用，也可异步调用。
+- 服务可以定时任务
+- 服务引擎可以通过SOAP,RMI或者EJB Session Bean来触发。
+
 
 Multiple service types: Java, BeanShell, Workflow, Rules, SOAP
 
